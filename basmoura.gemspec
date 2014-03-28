@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Basmoura::VERSION
   spec.authors       = ["Breno Moura"]
   spec.email         = ["basmoura@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Provide informations about me}
+  spec.description   = %q{I believe in one simple thing: if you are a developer, do all you can as a developer}
   spec.homepage      = ""
   spec.license       = "MIT"
 
