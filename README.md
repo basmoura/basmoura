@@ -1,6 +1,6 @@
 # Basmoura
 
-TODO: Write a gem description
+This is a simple gem to show my professional informations.
 
 ## Installation
 
@@ -10,7 +10,7 @@ TODO: Write a gem description
 
 ## Usage
 
-This is a simple gem to show my professional informations.
+
 Type `basmoura -s` on the console to see it.
 
 ## Contributing
