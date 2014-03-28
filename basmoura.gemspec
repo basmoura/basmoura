@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables   = 'basmoura'
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
@@ -22,4 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'colorize', '~> 0.7.0'
 
   spec.add_development_dependency "bundler", "~> 1.5"
+
+  spec.post_install_message = "This is a simple gem to show my professional informations."\
+    "Type basmoura to see it"
 end
