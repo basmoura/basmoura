@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.5"
 
   spec.post_install_message = "This is a simple gem to show my professional informations."\
-    "Type basmoura to see it"
+    " Type basmoura -s to see it"
 end
