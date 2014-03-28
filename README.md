@@ -4,25 +4,18 @@ TODO: Write a gem description
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'basmoura'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+ Install it yourself as:
 
     $ gem install basmoura
 
 ## Usage
 
-TODO: Write usage instructions here
+This is a simple gem to show my professional informations.
+Type `basmoura` on the console to see it.
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/basmoura/fork )
+1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
