@@ -1,5 +1,6 @@
 # Basmoura
 
+I believe in one simple thing: if you are a developer, do all you can as a developer.
 This is a simple gem to show my professional informations.
 
 ## Installation
