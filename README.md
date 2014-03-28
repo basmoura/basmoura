@@ -11,7 +11,7 @@ TODO: Write a gem description
 ## Usage
 
 This is a simple gem to show my professional informations.
-Type `basmoura` on the console to see it.
+Type `basmoura -s` on the console to see it.
 
 ## Contributing
 
