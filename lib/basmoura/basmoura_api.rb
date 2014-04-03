@@ -42,9 +42,8 @@ module Basmoura
       puts "-" * 80
     end
 
-    private
     def basic_info
-      puts "Brasileiro, Solteiro, #{age_calculate} anos"
+      "Brasileiro, Solteiro, #{age_calculate} anos"
     end
 
     def contact_info
@@ -54,9 +53,9 @@ module Basmoura
     end
 
     def qualifications
-      puts "- Cursando o sexto período da graduação em sistemas de informação;"
-      puts "- Bons conhecimentos em Ruby on Rails, Java, C#, asp.net, HTML5, CSS3 e Scrum;"
-      puts "- Experiência em desenvolvimento de sistemas em Ruby on Rails, asp.net e C#"
+      q = ["- Cursando o sexto período da graduação em sistemas de informação;",
+           "- Bons conhecimentos em Ruby on Rails, Java, C#, ASP.NET, HTML5, CSS3 e Scrum;",
+           "- Experiência em desenvolvimento de sistemas em Ruby on Rails, ASP.NET e C#"]
     end
 
     def professional_exp
