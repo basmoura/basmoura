@@ -6,9 +6,13 @@ options = {}
 
 OptionParser.new do |opts|
   opts.banner = "Usage: basmoura [options]"
-  opts.on('-p', '--pdf', 'Export to a PDF file') do |pdf|
-    Basmoura::pdf
+  opts.on('-s', '--show', help='Show in terminal')
+  opts.on('-p', '--pdf', help='Export to a PDF file') do |pdf|
+    options[:pdf] = t
   end
-
-  opts.on('-s', '--show') { puts Basmoura::show; exit(0) }
 end.parse!
+
+puts Basmoura::show; exit(0) if options[:pdf].nil?
+
+Basmoura::pdf unless options[:pdf].nil?
+
