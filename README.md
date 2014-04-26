@@ -12,8 +12,7 @@ This is a simple gem to show my professional informations.
 ## Usage
 
 
-Type `basmoura` on the console to see it.
-Typo `basmoura -p` to export to a pdf file.
+Type `basmoura` on the console to see it; `basmoura -p` to export to a pdf file.
 
 ## Contributing
 
