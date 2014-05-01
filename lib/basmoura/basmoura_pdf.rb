@@ -37,8 +37,21 @@ module Basmoura
           end
         end
       end
+      detect_os
+    end
 
-      system('open basmoura.pdf')
+    def self.detect_os
+      @os ||= (
+        host_os = RbConfig::CONFIG['host_os']
+        case host_os
+        when /darwin|mac os/
+          system('open basmoura.pdf')
+        when /linux/
+          system('xdg-open basmoura.pdf')
+        else
+          raise Error::WebDriverError, "unknown os: #{host_os.inspect}"
+        end
+      )
     end
   end
 end
