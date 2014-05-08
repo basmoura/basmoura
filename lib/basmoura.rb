@@ -1,12 +1,12 @@
 # coding: utf-8
 
 require "basmoura/version"
-require "basmoura/basmoura_api"
-require "basmoura/basmoura_pdf"
+require "basmoura/console"
+require "basmoura/pdf"
 
 module Basmoura
   def self.show
-    BasmouraApi.new.curriculum
+    Console.new.curriculum
   end
 
   def self.pdf
