@@ -1,19 +1,30 @@
 #!/usr/bin/env ruby
-require 'optparse'
+# coding: utf-8
+
 require 'basmoura'
 
-options = {}
+readme = <<-HELP
+  Usage: basmoura <command>
 
-OptionParser.new do |opts|
-  opts.banner = "Usage: basmoura [options]"
-  opts.on('-s', '--show', help='Show in terminal')
-  opts.on('-p', '--pdf', help='Export to a PDF file') do |pdf|
-    options[:pdf] = true
+  Commands:
+  console   Shows my CV at the console
+            eg: basmoura console
+
+  pdf       Generates a PDF and opens automatically
+            eg: basmoura pdf
+HELP
+
+unless ARGV.empty?
+  case ARGV.first
+  when "console"
+    Basmoura::Console.show
+  when "pdf"
+    Basmoura::Pdf.generate
+  else
+    puts readme
   end
-end.parse!
-
-if options[:pdf].nil?
-  Basmoura::show; exit(0)
 else
-  Basmoura::pdf
+  puts readme
 end
+
+
