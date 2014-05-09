@@ -1,13 +1,7 @@
 # coding: utf-8
 
-require "Date"
-
 module Basmoura
   class Api
-    def basic_info
-      "Brazilian, Single, #{age_calculate} year old"
-    end
-
     def contact_info
       contact = { :phone  => "+55 (79) 8835-3428",
                   :github => "http://github.com/basmoura",
@@ -69,13 +63,6 @@ module Basmoura
       languages = { :inglês    => "Fluent",
                     :espanhol  => "Basic",
                     :português => "Fluent" }
-    end
-
-    def age_calculate
-      today = Date.today
-      birthdate = Date.parse("27/09/1988")
-      age = today.year - birthdate.year
-      age = age - 1 if birthdate.month > today.month
     end
 
     def clear

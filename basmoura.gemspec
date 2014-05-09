@@ -5,6 +5,7 @@ require 'basmoura/version'
 Gem::Specification.new do |spec|
   spec.name          = "basmoura"
   spec.version       = Basmoura::VERSION
+  spec.platform      = Gem::Platform::RUBY
   spec.authors       = ["Breno Moura"]
   spec.email         = ["basmoura@gmail.com"]
   spec.summary       = %q{Provide informations about me}
@@ -17,12 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'rake', '>= 10.0.0'
+  spec.required_ruby_version = '>= 1.9.3'
+
   spec.add_dependency 'colorize', '~> 0.7.0'
   spec.add_dependency 'prawn', '~> 1.0.0'
 
   spec.add_development_dependency "bundler", "~> 1.5"
+  spec.add_development_dependency "rake"
 
   spec.post_install_message = "This is a simple gem to show my professional informations."\
-    " Type basmoura."
+    " Type basmoura"
 end
