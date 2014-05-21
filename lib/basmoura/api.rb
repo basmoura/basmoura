@@ -56,7 +56,7 @@ module Basmoura
                                                            :info    => "https://github.com/basmoura/TDD-Ruby" },
 
                                         :basmoura     => { :project => "Basmoura CV Generator",
-                                                           :info    => "https://github.com/basmoura/TDD-Ruby" } } }
+                                                           :info    => "https://github.com/basmoura/basmoura" } } }
     end
 
     def languages
