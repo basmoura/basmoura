@@ -4,7 +4,7 @@
 require 'basmoura'
 
 readme = <<-HELP
-  Usage: basmoura <command>
+  Usage: basmoura [command]
 
   Commands:
   console   Shows my CV at the console
