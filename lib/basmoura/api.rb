@@ -9,14 +9,19 @@ module Basmoura
     end
 
     def skill_sumary
-      %w(Ruby\ /\ Ruby\ on\ Rails C#\ /\ ASP.NET HTML\ /\ CSS\ /\ JavaScript GIT Scrum)
+      %w(Ruby\ /\ Ruby\ on\ Rails Java C#\ /\ ASP.NET HTML\ /\ CSS\ /\ JavaScript GIT Scrum)
     end
 
     def professional_exp
-      jobs = { :pop     => { :role    => "Ruby on Rails Developer",
+      jobs = { :jaya    => { :role    => "Software Developer",
+                             :tasks   => ["- Full application development using Ruby on Rails, Java and Shell Script"],
+                             :period  => "Jun 2014 - Today",
+                             :company => "Jaya Apps" },
+
+               :pop     => { :role    => "Ruby on Rails Developer",
                              :tasks   => ["- Full application development using Ruby on Rails",
                                           "- Full webservice development and integration with push notifications server for Android and iOS systems"],
-                             :period  => "Nov 2013 - Today",
+                             :period  => "Nov 2013 - May 2014",
                              :company => "Popcode Mobile Solutions" },
 
                :swx     => { :role    => "Ruby on Rails Developer Trainee",
