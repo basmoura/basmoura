@@ -22,4 +22,4 @@ Type `basmoura` on the console to see it; `basmoura -p` to export to a pdf file.
 5. Create new Pull Request
 6.
 
-testing eleminder integration
+suoer testing eleminder integration
